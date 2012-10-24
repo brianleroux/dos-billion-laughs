@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "Test for the Billion Laughs DoS attack.",
   "main": "lol.js",
-  "dependencies": {
-    "connect": "~2.6.0",
-    "flatiron": "~0.2.8",
-    "union": "~0.3.4"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "node test.js"
