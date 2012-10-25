@@ -1,6 +1,6 @@
 {
   "name": "dos-billion-laughs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Test for the Billion Laughs DoS attack.",
   "main": "lol.js",
   "dependencies": {},

@@ -4,7 +4,8 @@ var fs = require('fs')
 
 module.exports = function(req, res) {
     return http.createServer(function(req, res) {
-        res.writeHead(200, {'Content-Type':'xml'})
-        fs.createReadStream(path.join(__dirname, 'lol.xml')).pipe(res)
+        var mime = req.url === '/lol.html' ? 'html' : 'xml'
+        res.writeHead(200, {'Content-Type':mime})
+        fs.createReadStream(path.join(__dirname, 'lol.' + mime)).pipe(res)
     })
 }
